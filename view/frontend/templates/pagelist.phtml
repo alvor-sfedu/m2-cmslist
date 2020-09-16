@@ -1,0 +1,9 @@
+
+<table>
+<?php
+/* @var Alvor\CmsList\Block\CmsList $block*/
+
+foreach ($block->getCmsPageList() as $page):?>
+    <tr><td><a href="<?= $block->getUrl($page->getIdentifier()) ?>"><?= $page->getTitle() ?></a></td></tr>
+<?php endforeach;?>
+</table>
